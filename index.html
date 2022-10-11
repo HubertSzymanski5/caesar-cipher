@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caesar Cipher</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+<header>
+    <h1>Caesar Cipher</h1>
+</header>
+<main>
+    <div class="mode-selector">
+        <p>Encrypt mode</p>
+        <button class="mode-switch"></button>
+        <p>Decrypt mode</p>
+    </div>
+    <div class="input-section">
+        <label for="input">Input</label>
+        <textarea name="input" id="input" cols="30" rows="1"></textarea>
+        <div class="shift-input">
+            <label for="shift">Cipher shift</label>
+            <input type="number" name="shift" id="shift" value="0" min="0">
+        </div>
+        <input type="button" value="Encrypt">
+    </div>
+    <div class="output-section">
+        <label for="output">Output</label>
+        <textarea name="output" id="output" cols="30" rows="1" disabled></textarea>
+    </div>
+    <script src="app.js"></script>
+</main>
+</body>
+</html>
